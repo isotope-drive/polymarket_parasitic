@@ -79,7 +79,8 @@ def market_filter(markets: list[dict], topics: List[str]) -> List[str]: #maybe c
 						break
 					except:
 						print(f"Missing data...")
-				break
+						break
+
 
 	return desired_markets
 
@@ -89,16 +90,16 @@ class Data_API: #Positions, activity, history
 	def __init__(self):
 		self.session = requests.Session()
 
-	def get_trades(self, market: List[str], takerOnly=True, limit = 100):
-			resp = self.session.get(
-				f"{BASE_URL_DATA}trades?",
-				params = {
-					"market" : market,
-					"takerOnly" : takerOnly,
-					"limit" : limit
+	def get_trades(self, market: List[str], takerOnly=True, limit = 1000) -> List[Dict]: # market has to be list of conditionIds?
+		resp = self.session.get(
+			f"{BASE_URL_DATA}trades?",
+			params = {
+				"market" : market,
+				"takerOnly" : takerOnly,
+				"limit" : limit
 				}
 			)
 
-			resp.raise_for_status()
-			return resp.json()
+		resp.raise_for_status()
+		return resp.json()
 
