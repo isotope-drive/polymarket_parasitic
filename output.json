@@ -47,11 +47,11 @@
     "profileImageOptimized": "",
     "transactionHash": "0x6f5676bb0f7c9cd72238c64f67ed3315b69c4a118b85d26f9ff0496c97f48777",
     "value": 47373.1181,
-    "Z_SCORE": 22.5379720442736,
+    "Z_SCORE": 22.580130801272194,
     "timeRemainingUTC": 28137629,
     "timeRemainingHuman": "325 days, 16:00:29",
     "endDate": 1798675200,
-    "confidenceValue": 6.9911090144273595
+    "confidenceValue": 6.995324890127219
   },
   {
     "proxyWallet": "0xbb04b21ed2cefd4d9d0320f6585ff575367d648c",
@@ -74,11 +74,11 @@
     "profileImageOptimized": "",
     "transactionHash": "0x5651bd0beef5da12a4832103c8251f7194f48256ed93dfcfe047ad97356038ba",
     "value": 35679.545699999995,
-    "Z_SCORE": 19.88020748350956,
+    "Z_SCORE": 19.88020311881483,
     "timeRemainingUTC": 12011651,
     "timeRemainingHuman": "139 days, 0:34:11",
     "endDate": 1782777600,
-    "confidenceValue": 5.5559753183509555
+    "confidenceValue": 5.5559748818814825
   },
   {
     "proxyWallet": "0xba3e4a5125a70fc1a39ecc1dafcbf61b6a0932df",
@@ -263,11 +263,11 @@
     "profileImageOptimized": "",
     "transactionHash": "0xb63862e4908234ec13e22de4fc80a5ffe21000620476218bccdf2717ddf8a3df",
     "value": 17769.6126,
-    "Z_SCORE": 9.857237404656301,
+    "Z_SCORE": 9.857238481020277,
     "timeRemainingUTC": 12233341,
     "timeRemainingHuman": "141 days, 14:09:01",
     "endDate": 1782777600,
-    "confidenceValue": 2.76268500046563
+    "confidenceValue": 2.7626851081020276
   },
   {
     "proxyWallet": "0x42f0e27766726310e48ed96afb63fd313558fec3",
@@ -290,11 +290,11 @@
     "profileImageOptimized": "",
     "transactionHash": "0xbe7552a5cdbaeaa43b615b32d9499b11d0a1da81f30004ccf88eedd6dadddd03",
     "value": 8327.93,
-    "Z_SCORE": 18.113110413572187,
+    "Z_SCORE": 18.07493318790404,
     "timeRemainingUTC": 27932187,
     "timeRemainingHuman": "323 days, 6:56:27",
     "endDate": 1798675200,
-    "confidenceValue": 2.6441040413572185
+    "confidenceValue": 2.640286318790404
   },
   {
     "proxyWallet": "0x6ffb4354cbe6e0f9989e3b55564ec5fb8646a834",
@@ -1127,11 +1127,11 @@
     "profileImageOptimized": "",
     "transactionHash": "0x192de1267d7c6bc1820ef46a8c5d425eba20bc0962d3bf5c5f186a232a10870e",
     "value": 1601.779,
-    "Z_SCORE": 10.281021321564763,
+    "Z_SCORE": 10.288964333685346,
     "timeRemainingUTC": 28647156,
     "timeRemainingHuman": "331 days, 13:32:36",
     "endDate": 1798675200,
-    "confidenceValue": 1.1882800321564764
+    "confidenceValue": 1.1890743333685347
   },
   {
     "proxyWallet": "0x4b786ddc5c56d0429094bedd15320def5b464d2f",
@@ -1343,11 +1343,11 @@
     "profileImageOptimized": "",
     "transactionHash": "0xe60b97eb670ec53d1636218cb457b39a566e953fcd1ea7395b3144e304529f9c",
     "value": 1499.9999990000001,
-    "Z_SCORE": 9.605944187384818,
+    "Z_SCORE": 9.613401487603145,
     "timeRemainingUTC": 28440287,
     "timeRemainingHuman": "329 days, 4:04:47",
     "endDate": 1798675200,
-    "confidenceValue": 1.110594418638482
+    "confidenceValue": 1.1113401486603145
   },
   {
     "proxyWallet": "0x088ffbbc6f2c0b3839d2832e75f37e1bcecbc9e7",
@@ -1451,11 +1451,11 @@
     "profileImageOptimized": "",
     "transactionHash": "0xfb6a8cd248b9f97b7695a0ddc50934b09336035c8db22117fde9123c1d30ce7c",
     "value": 1447.9901,
-    "Z_SCORE": 9.260974270005608,
+    "Z_SCORE": 9.268183367483378,
     "timeRemainingUTC": 28093309,
     "timeRemainingHuman": "325 days, 3:41:49",
     "endDate": 1798675200,
-    "confidenceValue": 1.070896437000561
+    "confidenceValue": 1.0716173467483379
   },
   {
     "proxyWallet": "0x71766d1f479db7c52e27d082caaec92b28cb6f9f",
@@ -1721,11 +1721,11 @@
     "profileImageOptimized": "",
     "transactionHash": "0xc4fb45e67483edaba3e412b184ea6db5a0a70cb55c2dba309d36a1edef44100e",
     "value": 2999.9999990000006,
-    "Z_SCORE": 6.405594651830722,
+    "Z_SCORE": 6.391461212736371,
     "timeRemainingUTC": 27964091,
     "timeRemainingHuman": "323 days, 15:48:11",
     "endDate": 1798675200,
-    "confidenceValue": 0.9405594650830722
+    "confidenceValue": 0.9391461211736372
   },
   {
     "proxyWallet": "0x090a0d3fc9d68d3e16db70e3460e3e4b510801b4",
@@ -1748,11 +1748,11 @@
     "profileImageOptimized": "",
     "transactionHash": "0xec4d395afacb0fe90c1c26a0e10009d8bc698ea6a3aa6d87e0034f8684622533",
     "value": 6306.6012,
-    "Z_SCORE": 2.935845720362094,
+    "Z_SCORE": 2.9415334850788186,
     "timeRemainingUTC": 28137629,
     "timeRemainingHuman": "325 days, 16:00:29",
     "endDate": 1798675200,
-    "confidenceValue": 0.9242446920362095
+    "confidenceValue": 0.9248134685078819
   },
   {
     "proxyWallet": "0x31646fb225a7743287e760e44923345644513033",
@@ -2133,6 +2133,33 @@
     "confidenceValue": 0.8062798456736284
   },
   {
+    "proxyWallet": "0x090a0d3fc9d68d3e16db70e3460e3e4b510801b4",
+    "side": "SELL",
+    "asset": "106181075047366745139197108801635573283215248045056329679360376976893016488727",
+    "conditionId": "0xbb4d51e6364066d92eb6f9b8413dd7193de70966736044463b205834805a1f3b",
+    "size": 21067.46,
+    "price": 0.2592377913616544,
+    "timestamp": 1770537865,
+    "title": "Will the Iranian regime fall before 2027?",
+    "slug": "will-the-iranian-regime-fall-by-the-end-of-2026",
+    "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/will-the-iranian-regime-fall-in-2025-YLXIniTmQs4q.png",
+    "eventSlug": "will-the-iranian-regime-fall-by-the-end-of-2026",
+    "outcome": "No",
+    "outcomeIndex": 1,
+    "name": "slight-",
+    "pseudonym": "Fresh-Hero",
+    "bio": "gm",
+    "profileImage": "",
+    "profileImageOptimized": "",
+    "transactionHash": "0xc9d30807d5843805047814176cf76aaba94ed7618ecfb0d37f345fd17c36d142",
+    "value": 5461.4818,
+    "Z_SCORE": 2.5373852681477898,
+    "timeRemainingUTC": 28137335,
+    "timeRemainingHuman": "325 days, 15:55:35",
+    "endDate": 1798675200,
+    "confidenceValue": 0.799886706814779
+  },
+  {
     "proxyWallet": "0xf44d28fbf28d964ed201dddd281c54459d7fcc17",
     "side": "BUY",
     "asset": "81046748927736052916392088237473207584765682653658270710464996485326088705956",
@@ -2158,33 +2185,6 @@
     "timeRemainingHuman": "91 days, 9:18:43",
     "endDate": 1774915200,
     "confidenceValue": 0.7995574071488426
-  },
-  {
-    "proxyWallet": "0x090a0d3fc9d68d3e16db70e3460e3e4b510801b4",
-    "side": "SELL",
-    "asset": "106181075047366745139197108801635573283215248045056329679360376976893016488727",
-    "conditionId": "0xbb4d51e6364066d92eb6f9b8413dd7193de70966736044463b205834805a1f3b",
-    "size": 21067.46,
-    "price": 0.2592377913616544,
-    "timestamp": 1770537865,
-    "title": "Will the Iranian regime fall before 2027?",
-    "slug": "will-the-iranian-regime-fall-by-the-end-of-2026",
-    "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/will-the-iranian-regime-fall-in-2025-YLXIniTmQs4q.png",
-    "eventSlug": "will-the-iranian-regime-fall-by-the-end-of-2026",
-    "outcome": "No",
-    "outcomeIndex": 1,
-    "name": "slight-",
-    "pseudonym": "Fresh-Hero",
-    "bio": "gm",
-    "profileImage": "",
-    "profileImageOptimized": "",
-    "transactionHash": "0xc9d30807d5843805047814176cf76aaba94ed7618ecfb0d37f345fd17c36d142",
-    "value": 5461.4818,
-    "Z_SCORE": 2.5324480502375963,
-    "timeRemainingUTC": 28137335,
-    "timeRemainingHuman": "325 days, 15:55:35",
-    "endDate": 1798675200,
-    "confidenceValue": 0.7993929850237596
   },
   {
     "proxyWallet": "0x2a019dc0089ea8c6edbbafc8a7cc9ba77b4b6397",
@@ -2261,11 +2261,11 @@
     "profileImageOptimized": "",
     "transactionHash": "0xe0c875a14c898a693aedb5224e7b3721b1422d4d281c973a5b5263696f94e90e",
     "value": 5419.2765,
-    "Z_SCORE": 2.5123023528522266,
+    "Z_SCORE": 2.5172020884218966,
     "timeRemainingUTC": 27984435,
     "timeRemainingHuman": "323 days, 21:27:15",
     "endDate": 1798675200,
-    "confidenceValue": 0.7931578852852226
+    "confidenceValue": 0.7936478588421896
   },
   {
     "proxyWallet": "0xedc2834124c0465fb2ccbf239896ef65f975ad9f",
@@ -2855,11 +2855,11 @@
     "profileImageOptimized": "",
     "transactionHash": "0x369715e34b058ae4264074cdca6a8d69cb0085ca6867397eb3fa64d24ac25c95",
     "value": 2175.4364,
-    "Z_SCORE": 4.593710612431013,
+    "Z_SCORE": 4.583298249099135,
     "timeRemainingUTC": 27951073,
     "timeRemainingHuman": "323 days, 12:11:13",
     "endDate": 1798675200,
-    "confidenceValue": 0.6769147012431014
+    "confidenceValue": 0.6758734649099135
   },
   {
     "proxyWallet": "0x50549484ffdbe69d85cb3b09deae3bbc12e68efc",
@@ -3071,11 +3071,11 @@
     "profileImageOptimized": "",
     "transactionHash": "0xbb257b002a5457915a66739935ba5ab7ffaf30085b8a849f940a61c0209d9b68",
     "value": 885.3936000000001,
-    "Z_SCORE": 5.529398707383729,
+    "Z_SCORE": 5.533922969939437,
     "timeRemainingUTC": 28504536,
     "timeRemainingHuman": "329 days, 21:55:36",
     "endDate": 1798675200,
-    "confidenceValue": 0.641479230738373
+    "confidenceValue": 0.6419316569939437
   },
   {
     "proxyWallet": "0xd294b84f6285efc73eaf69931133d751f7734786",
@@ -3260,11 +3260,11 @@
     "profileImageOptimized": "",
     "transactionHash": "0xe845bc61d06d3c5d475c5fdd66fa0154ff4f48d8966e5e6071e05edd3ef27c5d",
     "value": 1999.999998,
-    "Z_SCORE": 4.208209218604008,
+    "Z_SCORE": 4.198588561508169,
     "timeRemainingUTC": 28133945,
     "timeRemainingHuman": "325 days, 14:59:05",
     "endDate": 1798675200,
-    "confidenceValue": 0.6208209216604008
+    "confidenceValue": 0.6198588559508169
   },
   {
     "proxyWallet": "0x0759ef6aad1598ac1e1ed7c92b95199a83139d71",
@@ -3314,11 +3314,11 @@
     "profileImageOptimized": "",
     "transactionHash": "0x1a593b747cb14a1d9134f5ae0b2323df56dd805979b60252b4ab9f7c1de9b7ee",
     "value": 728.16,
-    "Z_SCORE": 5.386314327636114,
+    "Z_SCORE": 5.392962950329414,
     "timeRemainingUTC": "Unknown",
     "timeRemainingHuman": "Unknown",
     "endDate": "Unknown",
-    "confidenceValue": 0.6114474327636115
+    "confidenceValue": 0.6121122950329414
   },
   {
     "proxyWallet": "0xeb22f4735df6bd5d14e1b5fd10faefa7757d808a",
@@ -3503,11 +3503,11 @@
     "profileImageOptimized": "",
     "transactionHash": "0xd262f830f0d72b0676d18c83af1e030ade992ba58cfd0e8424e342e322b1f108",
     "value": 1919.9999980000002,
-    "Z_SCORE": 4.032418384121663,
+    "Z_SCORE": 4.023158749585343,
     "timeRemainingUTC": 27919215,
     "timeRemainingHuman": "323 days, 3:20:15",
     "endDate": 1798675200,
-    "confidenceValue": 0.5952418382121664
+    "confidenceValue": 0.5943158747585343
   },
   {
     "proxyWallet": "0xdfee1d79b4384ca40109c87c8b5027df33a364bb",
@@ -3611,11 +3611,11 @@
     "profileImageOptimized": "",
     "transactionHash": "0x023e19228f51227edb190d6e9b0a421c3be3d2abd1689cb44cfda654a0619541",
     "value": 811.7143,
-    "Z_SCORE": 5.04070054564421,
+    "Z_SCORE": 5.044873194285376,
     "timeRemainingUTC": 28207701,
     "timeRemainingHuman": "326 days, 11:28:21",
     "endDate": 1798675200,
-    "confidenceValue": 0.585241484564421
+    "confidenceValue": 0.5856587494285377
   },
   {
     "proxyWallet": "0x5060b41a1be40a63b7da2075e42479b29157a780",
@@ -3638,11 +3638,11 @@
     "profileImageOptimized": "",
     "transactionHash": "0x2b66637b9f8eb3507eba39c0781d72a13dbe1b2140dfcfb5cd8db1003a5cb98c",
     "value": 799.999998,
-    "Z_SCORE": 4.96300222530917,
+    "Z_SCORE": 4.967118970710453,
     "timeRemainingUTC": 28495634,
     "timeRemainingHuman": "329 days, 19:27:14",
     "endDate": 1798675200,
-    "confidenceValue": 0.576300222330917
+    "confidenceValue": 0.5767118968710452
   },
   {
     "proxyWallet": "0x8190816855b676a5efd8c5b344135a72337bb247",
@@ -3746,11 +3746,11 @@
     "profileImageOptimized": "",
     "transactionHash": "0x9f99a4d827e8d22afc249480746a4ae4ffc38710ff1b5dedb2cb92e6e5fab3e9",
     "value": 787.67,
-    "Z_SCORE": 4.881220132416703,
+    "Z_SCORE": 4.8852780363406225,
     "timeRemainingUTC": 31391059,
     "timeRemainingHuman": "363 days, 7:44:19",
     "endDate": 1798675200,
-    "confidenceValue": 0.5668890132416703
+    "confidenceValue": 0.5672948036340623
   },
   {
     "proxyWallet": "0xdb405a9ad581a23c68a32b5d5869d4ad5ae73612",
@@ -3827,10 +3827,10 @@
     "profileImageOptimized": "",
     "transactionHash": "0x10fad51b67f37e764f20a6e109830330d179869d07f4cf2150bd06b25e5cef14",
     "value": 3646.08,
-    "Z_SCORE": 1.9532578717841926,
+    "Z_SCORE": 1.9532632388939597,
     "timeRemainingUTC": 12057491,
     "timeRemainingHuman": "139 days, 13:18:11",
     "endDate": 1782777600,
-    "confidenceValue": 0.5599337871784192
+    "confidenceValue": 0.5599343238893959
   }
 ]
