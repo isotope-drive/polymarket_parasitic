@@ -20,13 +20,13 @@ class Trades:
 		for trade in self.market_trades:
 			local_tv = trade["value"] = trade["size"]*trade["price"]
 			values[trade["side"]].append(local_tv)
-
+		
 		self.buy_mean = statistics.mean(values["BUY"])
 		self.buy_sd = statistics.pstdev(values["BUY"])
 
 		self.sell_mean = statistics.mean(values["SELL"])
 		self.sell_sd = statistics.pstdev(values["SELL"])
-
+		
 
 	def outliers(self):
 		outliers = []
