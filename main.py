@@ -47,7 +47,7 @@ for outlier in outliers:
 		if trade["confidenceValue"] > 0.55:
 			final_list.append(trade)								# Ta-Da
 
-final_list.sort(key=lambda x: x["confidenceValue"]) #maybe reverse
+final_list.sort(key=lambda x: x["confidenceValue"], reverse=True) #maybe reverse
 
 with open("output.json", "w") as f:
 	json.dump(final_list, f, indent=2)
