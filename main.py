@@ -39,7 +39,8 @@ for market_trades in all_trades: 									#append to list List[Dict] basic outli
 final_list =[]
 
 for outlier in outliers: 
-	#print(outlier.market_trades)									# Do a bunch of shit 
+	#print(outlier.market_trades)
+	print("Still running...")									# Do a bunch of shit 
 	outlier.time_analysis(Gamma_API=GammaTest)
 	outlier.confidence_analysis()
 	for trade in outlier.market_trades: 
@@ -52,6 +53,7 @@ with open("output.json", "w") as f:
 	json.dump(final_list, f, indent=2)
 
 print("done")
+
 
 def git_push():
     try:
