@@ -1,32 +1,5 @@
 [
   {
-    "proxyWallet": "0xd34bf815245d5bcea098cb0ea17df360b5c50004",
-    "side": "BUY",
-    "asset": "45763018441764333771124945243746174684578244015331389396782339063349542289693",
-    "conditionId": "0x182390641d3b1b47cc64274b9da290efd04221c586651ba190880713da6347d9",
-    "size": 1079,
-    "price": 0.73,
-    "timestamp": 1767284141,
-    "title": "US-Iran nuclear deal before 2027?",
-    "slug": "us-iran-nuclear-deal-before-2027",
-    "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-x-iran-nuclear-deal-in-2025-3rpCC4Kl23Lc.jpg",
-    "eventSlug": "us-iran-nuclear-deal-before-2027",
-    "outcome": "No",
-    "outcomeIndex": 1,
-    "name": "Jest55",
-    "pseudonym": "Genuine-Segment",
-    "bio": "",
-    "profileImage": "",
-    "profileImageOptimized": "",
-    "transactionHash": "0x9f99a4d827e8d22afc249480746a4ae4ffc38710ff1b5dedb2cb92e6e5fab3e9",
-    "value": 787.67,
-    "Z_SCORE": 4.81573746659573,
-    "timeRemainingUTC": 31391059,
-    "timeRemainingHuman": "363 days, 7:44:19",
-    "endDate": 1798675200,
-    "confidenceValue": 0.560340746659573
-  },
-  {
     "proxyWallet": "0x14619de097b1fbe058d6d36282662c20958a30a1",
     "side": "BUY",
     "asset": "23311563303783760858176166115231875564829760730498992986905724285046115223219",
@@ -47,11 +20,11 @@
     "profileImageOptimized": "",
     "transactionHash": "0x10fad51b67f37e764f20a6e109830330d179869d07f4cf2150bd06b25e5cef14",
     "value": 3646.08,
-    "Z_SCORE": 1.9614885754101392,
+    "Z_SCORE": 1.9615851867738336,
     "timeRemainingUTC": 12057491,
     "timeRemainingHuman": "139 days, 13:18:11",
     "endDate": 1782777600,
-    "confidenceValue": 0.5607568575410139
+    "confidenceValue": 0.5607665186773834
   },
   {
     "proxyWallet": "0x35417b3d09d7a0991f75d7cc95162a6e34d7462e",
@@ -81,31 +54,31 @@
     "confidenceValue": 0.5608070905318121
   },
   {
-    "proxyWallet": "0xf9b71663d723d28fa455db659098e1dacde860a4",
-    "side": "SELL",
-    "asset": "102936224134271070189104847090829839924697394514566827387181305960175107677216",
+    "proxyWallet": "0xd34bf815245d5bcea098cb0ea17df360b5c50004",
+    "side": "BUY",
+    "asset": "45763018441764333771124945243746174684578244015331389396782339063349542289693",
     "conditionId": "0x182390641d3b1b47cc64274b9da290efd04221c586651ba190880713da6347d9",
-    "size": 1029.62,
-    "price": 0.43,
-    "timestamp": 1770228683,
+    "size": 1079,
+    "price": 0.73,
+    "timestamp": 1767284141,
     "title": "US-Iran nuclear deal before 2027?",
     "slug": "us-iran-nuclear-deal-before-2027",
     "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-x-iran-nuclear-deal-in-2025-3rpCC4Kl23Lc.jpg",
     "eventSlug": "us-iran-nuclear-deal-before-2027",
-    "outcome": "Yes",
-    "outcomeIndex": 0,
-    "name": "siick",
-    "pseudonym": "",
+    "outcome": "No",
+    "outcomeIndex": 1,
+    "name": "Jest55",
+    "pseudonym": "Genuine-Segment",
     "bio": "",
     "profileImage": "",
     "profileImageOptimized": "",
-    "transactionHash": "0xbc514a0a721889ea8ac26bbbb7bd6abaf8b3202ec885d3631d10981e103859a9",
-    "value": 442.73659999999995,
-    "Z_SCORE": 5.212049745873858,
-    "timeRemainingUTC": 28446517,
-    "timeRemainingHuman": "329 days, 5:48:37",
+    "transactionHash": "0x9f99a4d827e8d22afc249480746a4ae4ffc38710ff1b5dedb2cb92e6e5fab3e9",
+    "value": 787.67,
+    "Z_SCORE": 4.8321740247078075,
+    "timeRemainingUTC": 31391059,
+    "timeRemainingHuman": "363 days, 7:44:19",
     "endDate": 1798675200,
-    "confidenceValue": 0.5654786345873858
+    "confidenceValue": 0.5619844024707807
   },
   {
     "proxyWallet": "0xdb405a9ad581a23c68a32b5d5869d4ad5ae73612",
@@ -135,6 +108,33 @@
     "confidenceValue": 0.566320319691791
   },
   {
+    "proxyWallet": "0xf9b71663d723d28fa455db659098e1dacde860a4",
+    "side": "SELL",
+    "asset": "102936224134271070189104847090829839924697394514566827387181305960175107677216",
+    "conditionId": "0x182390641d3b1b47cc64274b9da290efd04221c586651ba190880713da6347d9",
+    "size": 1029.62,
+    "price": 0.43,
+    "timestamp": 1770228683,
+    "title": "US-Iran nuclear deal before 2027?",
+    "slug": "us-iran-nuclear-deal-before-2027",
+    "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-x-iran-nuclear-deal-in-2025-3rpCC4Kl23Lc.jpg",
+    "eventSlug": "us-iran-nuclear-deal-before-2027",
+    "outcome": "Yes",
+    "outcomeIndex": 0,
+    "name": "siick",
+    "pseudonym": "",
+    "bio": "",
+    "profileImage": "",
+    "profileImageOptimized": "",
+    "transactionHash": "0xbc514a0a721889ea8ac26bbbb7bd6abaf8b3202ec885d3631d10981e103859a9",
+    "value": 442.73659999999995,
+    "Z_SCORE": 5.221718647151339,
+    "timeRemainingUTC": 28446517,
+    "timeRemainingHuman": "329 days, 5:48:37",
+    "endDate": 1798675200,
+    "confidenceValue": 0.5664455247151339
+  },
+  {
     "proxyWallet": "0x5060b41a1be40a63b7da2075e42479b29157a780",
     "side": "BUY",
     "asset": "102936224134271070189104847090829839924697394514566827387181305960175107677216",
@@ -155,11 +155,11 @@
     "profileImageOptimized": "",
     "transactionHash": "0x2b66637b9f8eb3507eba39c0781d72a13dbe1b2140dfcfb5cd8db1003a5cb98c",
     "value": 799.999998,
-    "Z_SCORE": 4.8965685035179645,
+    "Z_SCORE": 4.913243068572237,
     "timeRemainingUTC": 28495634,
     "timeRemainingHuman": "329 days, 19:27:14",
     "endDate": 1798675200,
-    "confidenceValue": 0.5696568501517965
+    "confidenceValue": 0.5713243066572238
   },
   {
     "proxyWallet": "0xc9dcc3d90ad3e34fe4132eb8661ae728d6da9026",
@@ -236,11 +236,11 @@
     "profileImageOptimized": "",
     "transactionHash": "0x023e19228f51227edb190d6e9b0a421c3be3d2abd1689cb44cfda654a0619541",
     "value": 811.7143,
-    "Z_SCORE": 4.973363258673658,
+    "Z_SCORE": 4.990263945840764,
     "timeRemainingUTC": 28207701,
     "timeRemainingHuman": "326 days, 11:28:21",
     "endDate": 1798675200,
-    "confidenceValue": 0.5785077558673658
+    "confidenceValue": 0.5801978245840764
   },
   {
     "proxyWallet": "0xd904ab5a9a24d704eac4a82d99527b68cded4295",
@@ -371,11 +371,11 @@
     "profileImageOptimized": "",
     "transactionHash": "0xd262f830f0d72b0676d18c83af1e030ade992ba58cfd0e8424e342e322b1f108",
     "value": 1919.9999980000002,
-    "Z_SCORE": 4.064585884718742,
+    "Z_SCORE": 4.059998826303957,
     "timeRemainingUTC": 27919215,
     "timeRemainingHuman": "323 days, 3:20:15",
     "endDate": 1798675200,
-    "confidenceValue": 0.5984585882718743
+    "confidenceValue": 0.5979998824303957
   },
   {
     "proxyWallet": "0xa4b366ad22fc0d06f1e934ff468e8922431a87b8",
@@ -614,11 +614,11 @@
     "profileImageOptimized": "",
     "transactionHash": "0xe845bc61d06d3c5d475c5fdd66fa0154ff4f48d8966e5e6071e05edd3ef27c5d",
     "value": 1999.999998,
-    "Z_SCORE": 4.2414065113168995,
+    "Z_SCORE": 4.2366363444280655,
     "timeRemainingUTC": 28133945,
     "timeRemainingHuman": "325 days, 14:59:05",
     "endDate": 1798675200,
-    "confidenceValue": 0.62414065093169
+    "confidenceValue": 0.6236636342428066
   },
   {
     "proxyWallet": "0x6813d709022160c43e577d09cfef67fb0b2b39e6",
@@ -646,33 +646,6 @@
     "timeRemainingHuman": "326 days, 5:37:09",
     "endDate": 1798675200,
     "confidenceValue": 0.6273457373282646
-  },
-  {
-    "proxyWallet": "0xc15700bb8059622268598014618f89057ff2728c",
-    "side": "BUY",
-    "asset": "102936224134271070189104847090829839924697394514566827387181305960175107677216",
-    "conditionId": "0x182390641d3b1b47cc64274b9da290efd04221c586651ba190880713da6347d9",
-    "size": 1581.06,
-    "price": 0.56,
-    "timestamp": 1770170664,
-    "title": "US-Iran nuclear deal before 2027?",
-    "slug": "us-iran-nuclear-deal-before-2027",
-    "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-x-iran-nuclear-deal-in-2025-3rpCC4Kl23Lc.jpg",
-    "eventSlug": "us-iran-nuclear-deal-before-2027",
-    "outcome": "Yes",
-    "outcomeIndex": 0,
-    "name": "easynow",
-    "pseudonym": "Weak-Husband",
-    "bio": "",
-    "profileImage": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-5097458-0dd4dacc-8168-40fc-9a61-7d51db9c3b36.jpg",
-    "profileImageOptimized": "",
-    "transactionHash": "0xbb257b002a5457915a66739935ba5ab7ffaf30085b8a849f940a61c0209d9b68",
-    "value": 885.3936000000001,
-    "Z_SCORE": 5.456378277711319,
-    "timeRemainingUTC": 28504536,
-    "timeRemainingHuman": "329 days, 21:55:36",
-    "endDate": 1798675200,
-    "confidenceValue": 0.634177187771132
   },
   {
     "proxyWallet": "0xe103707480b4f1625bce4084795f91ac503459fd",
@@ -727,6 +700,33 @@
     "timeRemainingHuman": "101 days, 13:31:56",
     "endDate": 1774915200,
     "confidenceValue": 0.6358466006940959
+  },
+  {
+    "proxyWallet": "0xc15700bb8059622268598014618f89057ff2728c",
+    "side": "BUY",
+    "asset": "102936224134271070189104847090829839924697394514566827387181305960175107677216",
+    "conditionId": "0x182390641d3b1b47cc64274b9da290efd04221c586651ba190880713da6347d9",
+    "size": 1581.06,
+    "price": 0.56,
+    "timestamp": 1770170664,
+    "title": "US-Iran nuclear deal before 2027?",
+    "slug": "us-iran-nuclear-deal-before-2027",
+    "icon": "https://polymarket-upload.s3.us-east-2.amazonaws.com/us-x-iran-nuclear-deal-in-2025-3rpCC4Kl23Lc.jpg",
+    "eventSlug": "us-iran-nuclear-deal-before-2027",
+    "outcome": "Yes",
+    "outcomeIndex": 0,
+    "name": "easynow",
+    "pseudonym": "Weak-Husband",
+    "bio": "",
+    "profileImage": "https://polymarket-upload.s3.us-east-2.amazonaws.com/profile-image-5097458-0dd4dacc-8168-40fc-9a61-7d51db9c3b36.jpg",
+    "profileImageOptimized": "",
+    "transactionHash": "0xbb257b002a5457915a66739935ba5ab7ffaf30085b8a849f940a61c0209d9b68",
+    "value": 885.3936000000001,
+    "Z_SCORE": 5.474701202326973,
+    "timeRemainingUTC": 28504536,
+    "timeRemainingHuman": "329 days, 21:55:36",
+    "endDate": 1798675200,
+    "confidenceValue": 0.6360094802326974
   },
   {
     "proxyWallet": "0xd478912d1ffc5c5242f0a5ab4e69bf692c4c2a73",
@@ -992,11 +992,11 @@
     "profileImageOptimized": "",
     "transactionHash": "0x369715e34b058ae4264074cdca6a8d69cb0085ca6867397eb3fa64d24ac25c95",
     "value": 2175.4364,
-    "Z_SCORE": 4.62916619293898,
+    "Z_SCORE": 4.623994477401857,
     "timeRemainingUTC": 27951073,
     "timeRemainingHuman": "323 days, 12:11:13",
     "endDate": 1798675200,
-    "confidenceValue": 0.680460259293898
+    "confidenceValue": 0.6799430877401857
   },
   {
     "proxyWallet": "0x8f0b2957d8c0ef47609fd01e42959fa6c70e8be2",
@@ -1586,11 +1586,11 @@
     "profileImageOptimized": "",
     "transactionHash": "0xe0c875a14c898a693aedb5224e7b3721b1422d4d281c973a5b5263696f94e90e",
     "value": 5419.2765,
-    "Z_SCORE": 2.5048887550281225,
+    "Z_SCORE": 2.507362594860762,
     "timeRemainingUTC": 27984435,
     "timeRemainingHuman": "323 days, 21:27:15",
     "endDate": 1798675200,
-    "confidenceValue": 0.7924165255028122
+    "confidenceValue": 0.7926639094860761
   },
   {
     "proxyWallet": "0x90f7180856b033ea45200d892a7bc49fd1662501",
@@ -1667,11 +1667,11 @@
     "profileImageOptimized": "",
     "transactionHash": "0xc9d30807d5843805047814176cf76aaba94ed7618ecfb0d37f345fd17c36d142",
     "value": 5461.4818,
-    "Z_SCORE": 2.524978169604968,
+    "Z_SCORE": 2.5274707878085496,
     "timeRemainingUTC": 28137335,
     "timeRemainingHuman": "325 days, 15:55:35",
     "endDate": 1798675200,
-    "confidenceValue": 0.7986459969604968
+    "confidenceValue": 0.7988952587808549
   },
   {
     "proxyWallet": "0xf44d28fbf28d964ed201dddd281c54459d7fcc17",
@@ -2099,11 +2099,11 @@
     "profileImageOptimized": "",
     "transactionHash": "0xec4d395afacb0fe90c1c26a0e10009d8bc698ea6a3aa6d87e0034f8684622533",
     "value": 6306.6012,
-    "Z_SCORE": 2.9272488321410672,
+    "Z_SCORE": 2.9301174686547564,
     "timeRemainingUTC": 28137629,
     "timeRemainingHuman": "325 days, 16:00:29",
     "endDate": 1798675200,
-    "confidenceValue": 0.9233850032141068
+    "confidenceValue": 0.9236718668654758
   },
   {
     "proxyWallet": "0x5060b41a1be40a63b7da2075e42479b29157a780",
@@ -2126,11 +2126,11 @@
     "profileImageOptimized": "",
     "transactionHash": "0xc4fb45e67483edaba3e412b184ea6db5a0a70cb55c2dba309d36a1edef44100e",
     "value": 2999.9999990000006,
-    "Z_SCORE": 6.451664346004137,
+    "Z_SCORE": 6.444605323187391,
     "timeRemainingUTC": 27964091,
     "timeRemainingHuman": "323 days, 15:48:11",
     "endDate": 1798675200,
-    "confidenceValue": 0.9451664345004138
+    "confidenceValue": 0.9444605322187392
   },
   {
     "proxyWallet": "0x000d257d2dc7616feaef4ae0f14600fdf50a758e",
@@ -2234,11 +2234,11 @@
     "profileImageOptimized": "",
     "transactionHash": "0xa3560cbe9b5e825ed2a46bd699ed42602344cd63698a5ca6eb4601201eef53e3",
     "value": 774.8189,
-    "Z_SCORE": 9.396429036417185,
+    "Z_SCORE": 9.412893368024422,
     "timeRemainingUTC": 27904385,
     "timeRemainingHuman": "322 days, 23:13:05",
     "endDate": 1798675200,
-    "confidenceValue": 1.0171247936417185
+    "confidenceValue": 1.0187712268024423
   },
   {
     "proxyWallet": "0xbd8fcedc372ba7eecb18cc746ed1b958efa420ab",
@@ -2369,11 +2369,11 @@
     "profileImageOptimized": "",
     "transactionHash": "0xfb6a8cd248b9f97b7695a0ddc50934b09336035c8db22117fde9123c1d30ce7c",
     "value": 1447.9901,
-    "Z_SCORE": 9.144558800029266,
+    "Z_SCORE": 9.173741570093005,
     "timeRemainingUTC": 28093309,
     "timeRemainingHuman": "325 days, 3:41:49",
     "endDate": 1798675200,
-    "confidenceValue": 1.0592548900029266
+    "confidenceValue": 1.0621731670093006
   },
   {
     "proxyWallet": "0x71766d1f479db7c52e27d082caaec92b28cb6f9f",
@@ -2504,11 +2504,11 @@
     "profileImageOptimized": "",
     "transactionHash": "0xe60b97eb670ec53d1636218cb457b39a566e953fcd1ea7395b3144e304529f9c",
     "value": 1499.9999990000001,
-    "Z_SCORE": 9.485517011570796,
+    "Z_SCORE": 9.515703732894293,
     "timeRemainingUTC": 28440287,
     "timeRemainingHuman": "329 days, 4:04:47",
     "endDate": 1798675200,
-    "confidenceValue": 1.0985517010570796
+    "confidenceValue": 1.1015703731894293
   },
   {
     "proxyWallet": "0xbacd00c9080a82ded56f504ee8810af732b0ab35",
@@ -2720,11 +2720,11 @@
     "profileImageOptimized": "",
     "transactionHash": "0x192de1267d7c6bc1820ef46a8c5d425eba20bc0962d3bf5c5f186a232a10870e",
     "value": 1601.779,
-    "Z_SCORE": 10.15274357460341,
+    "Z_SCORE": 10.184894944161869,
     "timeRemainingUTC": 28647156,
     "timeRemainingHuman": "331 days, 13:32:36",
     "endDate": 1798675200,
-    "confidenceValue": 1.175452257460341
+    "confidenceValue": 1.178667394416187
   },
   {
     "proxyWallet": "0x35417b3d09d7a0991f75d7cc95162a6e34d7462e",
@@ -3557,11 +3557,11 @@
     "profileImageOptimized": "",
     "transactionHash": "0xbe7552a5cdbaeaa43b615b32d9499b11d0a1da81f30004ccf88eedd6dadddd03",
     "value": 8327.93,
-    "Z_SCORE": 18.227763361603465,
+    "Z_SCORE": 18.20850947463262,
     "timeRemainingUTC": 27932187,
     "timeRemainingHuman": "323 days, 6:56:27",
     "endDate": 1798675200,
-    "confidenceValue": 2.6555693361603465
+    "confidenceValue": 2.6536439474632623
   },
   {
     "proxyWallet": "0x7744bfd749a70020d16a1fcbac1d064761c9999e",
@@ -3584,11 +3584,11 @@
     "profileImageOptimized": "",
     "transactionHash": "0xb63862e4908234ec13e22de4fc80a5ffe21000620476218bccdf2717ddf8a3df",
     "value": 17769.6126,
-    "Z_SCORE": 9.89654099953343,
+    "Z_SCORE": 9.896586916675112,
     "timeRemainingUTC": 12233341,
     "timeRemainingHuman": "141 days, 14:09:01",
     "endDate": 1782777600,
-    "confidenceValue": 2.766615359953343
+    "confidenceValue": 2.7666199516675114
   },
   {
     "proxyWallet": "0x000d257d2dc7616feaef4ae0f14600fdf50a758e",
@@ -3773,11 +3773,11 @@
     "profileImageOptimized": "",
     "transactionHash": "0x5651bd0beef5da12a4832103c8251f7194f48256ed93dfcfe047ad97356038ba",
     "value": 35679.545699999995,
-    "Z_SCORE": 19.95891435087479,
+    "Z_SCORE": 19.958895983099193,
     "timeRemainingUTC": 12011651,
     "timeRemainingHuman": "139 days, 0:34:11",
     "endDate": 1782777600,
-    "confidenceValue": 5.563846005087479
+    "confidenceValue": 5.5638441683099185
   },
   {
     "proxyWallet": "0x090a0d3fc9d68d3e16db70e3460e3e4b510801b4",
@@ -3800,11 +3800,11 @@
     "profileImageOptimized": "",
     "transactionHash": "0x6f5676bb0f7c9cd72238c64f67ed3315b69c4a118b85d26f9ff0496c97f48777",
     "value": 47373.1181,
-    "Z_SCORE": 22.474610969861395,
+    "Z_SCORE": 22.495751299447964,
     "timeRemainingUTC": 28137629,
     "timeRemainingHuman": "325 days, 16:00:29",
     "endDate": 1798675200,
-    "confidenceValue": 6.984772906986139
+    "confidenceValue": 6.986886939944796
   },
   {
     "proxyWallet": "0x090a0d3fc9d68d3e16db70e3460e3e4b510801b4",
