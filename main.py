@@ -1,6 +1,7 @@
 import api
 import trademath
 import json
+import subprocess
 from typing import List, Dict
 
 
@@ -51,3 +52,13 @@ with open("output.json", "w") as f:
 	json.dump(final_list, f, indent=2)
 
 print("done")
+
+def git_push():
+    try:
+        subprocess.run(["git", "add", "output.json"], check=True)
+        subprocess.run(["git", "commit", "-m", "Hourly update"], check=True)
+        subprocess.run(["git", "push"], check=True)
+    except subprocess.CalledProcessError as e:
+        print("Git operation failed:", e)
+
+git_push()
