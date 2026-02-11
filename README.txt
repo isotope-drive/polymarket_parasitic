@@ -1,0 +1,3 @@
+Polymarket Parasitic exists to detect suspicious trading on the polymarket platform.
+
+There are a few fortuitious facts that led to this project in the first place... it was inspired by some very timely trades made before ye old Venezuelan president Maduro's rapid displacement. Apart from that, there is a ludicrious volume of tempting potential quid pro quo in events trading. We don't want to be tempted, we just want to know when someone else is. 

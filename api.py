@@ -37,6 +37,14 @@ class Gamma_API:
 		resp.raise_for_status()
 		return resp.json()
 
+	def fetch_by_slug(self, slug:str):
+		resp = self.session.get(
+			f"{BASE_URL_GAMMA}events/slug/{slug}"
+			)
+		resp.raise_for_status()
+		return resp.json()
+
+
 	def end_session(self):
 		self.session.close()
 
@@ -67,14 +75,14 @@ class Clob_API: #Prices, orderbooks, trading
 
 
 def market_filter(markets: list[dict], topics: List[str]) -> List[str]: #maybe change return for ease later, this list will have to be used by later classes to cross ref ID,
-	desired_markets = []											# the logic of this needs to be verified. It appears to work but error handling is non existant anyway. 
+	desired_markets = []											
 
 	for market in markets:
 		for topic in topics:
 			if topic in market["title"].lower(): # & os.time.laterthan(market["end_date?"]) != True 
 				for event in market["markets"]:
 					try:
-						print(f"{event["question"]}\n\tconditionId: {event["conditionId"]}")
+						#print(f"{event["question"]}\n\tconditionId: {event["conditionId"]}")
 						desired_markets.append(event["conditionId"])
 						break
 					except:
@@ -90,8 +98,8 @@ class Data_API: #Positions, activity, history
 	def __init__(self):
 		self.session = requests.Session()
 
-	def get_trades(self, market: List[str], takerOnly=True, limit = 1000) -> List[Dict]: # market has to be list of conditionIds?
-		resp = self.session.get(
+	def get_trades(self, market: List[str], takerOnly=True, limit = 1000) -> List[Dict]: # market has to be list of conditionIds but list doesn't seem to work
+		resp = self.session.get(														# passing single conditionIds does though
 			f"{BASE_URL_DATA}trades?",
 			params = {
 				"market" : market,
@@ -103,3 +111,5 @@ class Data_API: #Positions, activity, history
 		resp.raise_for_status()
 		return resp.json()
 
+
+	#def event_slug_trade(self, event_slug: str, )
