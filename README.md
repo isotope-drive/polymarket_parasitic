@@ -1,4 +1,4 @@
-# polymarket_inter_parasitic
+# polymarket_parasitic
 
 Insider trading predictor
 
