@@ -20,11 +20,11 @@
     "profileImageOptimized": "",
     "transactionHash": "0x5651bd0beef5da12a4832103c8251f7194f48256ed93dfcfe047ad97356038ba",
     "value": 35679.545699999995,
-    "Z_SCORE": 21.472661809332482,
+    "Z_SCORE": 21.472669782905072,
     "timeRemainingUTC": 12011651,
     "timeRemainingHuman": "139 days, 0:34:11",
     "endDate": 1782777600,
-    "confidenceValue": 5.7152207509332476
+    "confidenceValue": 5.715221548290507
   },
   {
     "proxyWallet": "0xba3e4a5125a70fc1a39ecc1dafcbf61b6a0932df",
@@ -560,11 +560,11 @@
     "profileImageOptimized": "",
     "transactionHash": "0x7fb1dc9c578e902cf922c95771c4d68eb08356804127fb33f3e2e511216d12f1",
     "value": 11100.0,
-    "Z_SCORE": 6.623641671003554,
+    "Z_SCORE": 6.623635968405732,
     "timeRemainingUTC": 11940243,
     "timeRemainingHuman": "138 days, 4:44:03",
     "endDate": 1782777600,
-    "confidenceValue": 1.7723641671003554
+    "confidenceValue": 1.7723635968405733
   },
   {
     "proxyWallet": "0x6d9fc316c3b8377060a44b852ba664adbfd59790",
@@ -3719,11 +3719,11 @@
     "profileImageOptimized": "",
     "transactionHash": "0x10fad51b67f37e764f20a6e109830330d179869d07f4cf2150bd06b25e5cef14",
     "value": 3646.08,
-    "Z_SCORE": 2.1205719421967766,
+    "Z_SCORE": 2.1205620922041493,
     "timeRemainingUTC": 12057491,
     "timeRemainingHuman": "139 days, 13:18:11",
     "endDate": 1782777600,
-    "confidenceValue": 0.5766651942196777
+    "confidenceValue": 0.576664209220415
   },
   {
     "proxyWallet": "0xf9b71663d723d28fa455db659098e1dacde860a4",
