@@ -15,7 +15,7 @@ TOPICS_WE_LIKE = ["greenland", "venezuela", "iran", "israel" ]      #check for s
 
 GammaTest = api.Gamma_API() 										# start gamma session, create gamma object for access to methods
 
-markets = GammaTest.get_markets(TAG_IDS["geopolitics"], limit=100)  # pull markets from api using gamma object
+markets = GammaTest.get_markets(TAG_IDS["geopolitics"], limit=1000)  # pull markets from api using gamma object
 
 
 conditionIdList = api.market_filter(markets, TOPICS_WE_LIKE)		# filter for keywords and return list of conditionIds to be used with clob, prints each approved market
@@ -29,7 +29,7 @@ DataTest = api.Data_API()											# start data session
 all_trades = [] # -> List[List[Dict]]	
 
 for conditionId in conditionIdList:									# append to list List[Dict] for trades of ech conditionId
-	all_trades.append(DataTest.get_trades(market=conditionId, limit=1000))
+	all_trades.append(DataTest.get_trades(market=conditionId, limit=2000))
 
 outliers = []
 
@@ -64,3 +64,4 @@ def git_push():
         print("Git operation failed:", e)
 
 git_push()
+
