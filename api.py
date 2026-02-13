@@ -103,7 +103,7 @@ class Clob_API: #Prices, orderbooks, trading
 
 
 
-
+'''
 def market_filter(markets: list[dict], topics: List[str]) -> List[str]: #maybe change return for ease later, this list will have to be used by later classes to cross ref ID,
 	desired_markets = []											
 
@@ -122,7 +122,7 @@ def market_filter(markets: list[dict], topics: List[str]) -> List[str]: #maybe c
 
 
 	return desired_markets
-
+'''
 
 
 class Data_API: #Positions, activity, history  

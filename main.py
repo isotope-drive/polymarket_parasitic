@@ -63,7 +63,7 @@ final_list =[]
 print("Doing statistical analysis")
 for outlier in outliers: 
 	#print(outlier.market_trades)								# Do a bunch of shit 
-	outlier.time_analysis(Gamma_API=GammaTest)
+	outlier.time_analysis(event_data_list=event_data_list)
 	outlier.confidence_analysis()
 	for trade in outlier.market_trades: 
 		if trade["confidenceValue"] > 0.55:

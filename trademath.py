@@ -66,6 +66,41 @@ class Trades:
 			return 0.0 						#Zeros must be handled
 		return (trade["value"]-mean)/sd
 
+	def time_analysis(self, event_data_list: List):
+		for trade in self.market_trades:
+			this_conditionId = trade["conditionId"]
+			for event in event_data_list:
+				if this_conditionId == event["conditionId"]:
+					end_date = event["endDate"]
+					end_date = datetime.fromisoformat(end_date.replace("Z","+00:00"))
+					end_date = int(datetime.timestamp(end_date))
+
+					time_remaining = end_date - trade["timestamp"]
+
+					trade["timeRemainingUTC"] = time_remaining
+					trade["timeRemainingHuman"] = str(timedelta(seconds=time_remaining))
+					trade["endDate"] = end_date
+
+					break
+
+	def confidence_analysis(self):
+
+
+		for trade in self.market_trades:
+			time_weight = 0
+			value_weight = 0
+
+			if trade["endDate"] == 'Unknown':
+				time_weight = 0.0
+			else:
+				time_weight = 0.0
+
+			value_weight = (trade["zScore"]/10) + (trade["value"]/10000)
+
+			trade["confidenceValue"] = 	(value_weight*1.0) + (time_weight*0.0)
+
+
+'''
 	def time_analysis(self, Gamma_API: api.Gamma_API):
 		slug_cache = {}
 
@@ -91,21 +126,4 @@ class Trades:
 				trade["timeRemainingUTC"] = 'Unknown'
 				trade["timeRemainingHuman"] = 'Unknown'
 				trade["endDate"] = 'Unknown'
-
-
-	def confidence_analysis(self):
-
-
-		for trade in self.market_trades:
-			time_weight = 0
-			value_weight = 0
-
-			if trade["endDate"] == 'Unknown':
-				time_weight = 0.0
-			else:
-				time_weight = 0.0
-
-			value_weight = (trade["zScore"]/10) + (trade["value"]/10000)
-
-			trade["confidenceValue"] = 	(value_weight*1.0) + (time_weight*0.0)
-
+'''
