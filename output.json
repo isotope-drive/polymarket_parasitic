@@ -108,11 +108,11 @@
     "pseudonym": "Dangerous-Sulfur",
     "transactionHash": "0xbe7552a5cdbaeaa43b615b32d9499b11d0a1da81f30004ccf88eedd6dadddd03",
     "value": 8327.93,
-    "zScore": 15.157911080403345,
+    "zScore": 15.174277951063438,
     "timeRemainingUTC": 27932187,
     "timeRemainingHuman": "323 days, 6:56:27",
     "endDate": 1798675200,
-    "confidenceValue": 2.3485841080403347
+    "confidenceValue": 2.3502207951063436
   },
   {
     "proxyWallet": "0x6ffb4354cbe6e0f9989e3b55564ec5fb8646a834",
@@ -177,11 +177,11 @@
     "pseudonym": "Valuable-Environment",
     "transactionHash": "0xe0c875a14c898a693aedb5224e7b3721b1422d4d281c973a5b5263696f94e90e",
     "value": 5419.2765,
-    "zScore": 16.612642785090568,
+    "zScore": 16.597198815076574,
     "timeRemainingUTC": 27984435,
     "timeRemainingHuman": "323 days, 21:27:15",
     "endDate": 1798675200,
-    "confidenceValue": 2.2031919285090567
+    "confidenceValue": 2.2016475315076574
   },
   {
     "proxyWallet": "0x7131cb618fb195c70e8e629c45199096833c29cc",
@@ -315,11 +315,11 @@
     "pseudonym": "",
     "transactionHash": "0x05f5aa673a0a7f7ad86ed962f135047beb8d93d205f79a2b0e49dcae04d99c70",
     "value": 6984.232400000001,
-    "zScore": 12.689931538159565,
+    "zScore": 12.70367886015812,
     "timeRemainingUTC": 27760251,
     "timeRemainingHuman": "321 days, 7:10:51",
     "endDate": 1798675200,
-    "confidenceValue": 1.9674163938159566
+    "confidenceValue": 1.9687911260158122
   },
   {
     "proxyWallet": "0x4b786ddc5c56d0429094bedd15320def5b464d2f",
@@ -1143,11 +1143,11 @@
     "pseudonym": "Chubby-Snug",
     "transactionHash": "0x2d1435fb503f4f39847de7c3cc1b4e6b607bc74fd4db515c87f16ec6075c436c",
     "value": 2854.6722000000004,
-    "zScore": 8.685328680704382,
+    "zScore": 8.677134002640718,
     "timeRemainingUTC": 27737033,
     "timeRemainingHuman": "321 days, 0:43:53",
     "endDate": 1798675200,
-    "confidenceValue": 1.1540000880704382
+    "confidenceValue": 1.153180620264072
   },
   {
     "proxyWallet": "0x77b0b896910b3388e01708521d1f92d1f5c2ba0b",
@@ -1189,11 +1189,11 @@
     "pseudonym": "Stained-Cynic",
     "transactionHash": "0xf8ef15fd51af4620fd415c2da944eb5ec76ab8ba68adc0cafc1844ab7588984e",
     "value": 2821.4832,
-    "zScore": 8.582739900123114,
+    "zScore": 8.574639036434846,
     "timeRemainingUTC": 27736025,
     "timeRemainingHuman": "321 days, 0:27:05",
     "endDate": 1798675200,
-    "confidenceValue": 1.1404223100123114
+    "confidenceValue": 1.1396122236434847
   },
   {
     "proxyWallet": "0xc2a37f1eb84fcc156c8aece9105dc1a73a36c3a6",
@@ -1702,29 +1702,6 @@
     "confidenceValue": 0.9376586626843304
   },
   {
-    "proxyWallet": "0x43372356634781eea88d61bbdd7824cdce958882",
-    "side": "SELL",
-    "asset": "10991849228756847439673778874175365458450913336396982752046655649803657501964",
-    "conditionId": "0xbb4d51e6364066d92eb6f9b8413dd7193de70966736044463b205834805a1f3b",
-    "size": 7365.14,
-    "price": 0.31,
-    "timestamp": 1770938435,
-    "title": "Will the Iranian regime fall before 2027?",
-    "slug": "will-the-iranian-regime-fall-by-the-end-of-2026",
-    "eventSlug": "will-the-iranian-regime-fall-by-the-end-of-2026",
-    "outcome": "Yes",
-    "outcomeIndex": 0,
-    "name": "Anjun",
-    "pseudonym": "Quizzical-Hire",
-    "transactionHash": "0xf9403f56049481502d72b15f8db2256b530eecd94f4db7d995b210f2527b7874",
-    "value": 2283.1934,
-    "zScore": 6.9188604767800195,
-    "timeRemainingUTC": 27736765,
-    "timeRemainingHuman": "321 days, 0:39:25",
-    "endDate": 1798675200,
-    "confidenceValue": 0.920205387678002
-  },
-  {
     "proxyWallet": "0x71766d1f479db7c52e27d082caaec92b28cb6f9f",
     "side": "SELL",
     "asset": "1910830010387565971650098373488592514702818137344973088263643820608151819241",
@@ -1746,6 +1723,29 @@
     "timeRemainingHuman": "357 days, 12:05:01",
     "endDate": 1798675200,
     "confidenceValue": 0.9199965671144188
+  },
+  {
+    "proxyWallet": "0x43372356634781eea88d61bbdd7824cdce958882",
+    "side": "SELL",
+    "asset": "10991849228756847439673778874175365458450913336396982752046655649803657501964",
+    "conditionId": "0xbb4d51e6364066d92eb6f9b8413dd7193de70966736044463b205834805a1f3b",
+    "size": 7365.14,
+    "price": 0.31,
+    "timestamp": 1770938435,
+    "title": "Will the Iranian regime fall before 2027?",
+    "slug": "will-the-iranian-regime-fall-by-the-end-of-2026",
+    "eventSlug": "will-the-iranian-regime-fall-by-the-end-of-2026",
+    "outcome": "Yes",
+    "outcomeIndex": 0,
+    "name": "Anjun",
+    "pseudonym": "Quizzical-Hire",
+    "transactionHash": "0xf9403f56049481502d72b15f8db2256b530eecd94f4db7d995b210f2527b7874",
+    "value": 2283.1934,
+    "zScore": 6.912281181122377,
+    "timeRemainingUTC": 27736765,
+    "timeRemainingHuman": "321 days, 0:39:25",
+    "endDate": 1798675200,
+    "confidenceValue": 0.9195474581122377
   },
   {
     "proxyWallet": "0x31646fb225a7743287e760e44923345644513033",
@@ -1948,11 +1948,11 @@
     "pseudonym": "Periodic-Marxism",
     "transactionHash": "0xc4fb45e67483edaba3e412b184ea6db5a0a70cb55c2dba309d36a1edef44100e",
     "value": 2999.9999990000006,
-    "zScore": 5.372061760604841,
+    "zScore": 5.378041791322012,
     "timeRemainingUTC": 27964091,
     "timeRemainingHuman": "323 days, 15:48:11",
     "endDate": 1798675200,
-    "confidenceValue": 0.8372061759604841
+    "confidenceValue": 0.8378041790322013
   },
   {
     "proxyWallet": "0x5060b41a1be40a63b7da2075e42479b29157a780",
@@ -3052,11 +3052,11 @@
     "pseudonym": "Lone-Glutamate",
     "transactionHash": "0x369715e34b058ae4264074cdca6a8d69cb0085ca6867397eb3fa64d24ac25c95",
     "value": 2175.4364,
-    "zScore": 3.857579563411883,
+    "zScore": 3.8619521011394755,
     "timeRemainingUTC": 27951073,
     "timeRemainingHuman": "323 days, 12:11:13",
     "endDate": 1798675200,
-    "confidenceValue": 0.6033015963411883
+    "confidenceValue": 0.6037388501139476
   },
   {
     "proxyWallet": "0xdfee1d79b4384ca40109c87c8b5027df33a364bb",
@@ -3213,11 +3213,11 @@
     "pseudonym": "False-Proposition",
     "transactionHash": "0x3d1a44678c78d8eb9aaa7d6c7d1b9f6dd22ca2099c17aa12c681c0eae3c06a06",
     "value": 1485.0,
-    "zScore": 4.451606640448244,
+    "zScore": 4.447283574724172,
     "timeRemainingUTC": 27832209,
     "timeRemainingHuman": "322 days, 3:10:09",
     "endDate": 1798675200,
-    "confidenceValue": 0.5936606640448243
+    "confidenceValue": 0.5932283574724172
   },
   {
     "proxyWallet": "0x3939a40d370cfde2bc41fcb9f427d91179886d6c",
@@ -3420,11 +3420,11 @@
     "pseudonym": "Vapid-Workshop",
     "transactionHash": "0x91778c69e56293644a8d28639f467d5df405442ea9db02bfdafdcc1700cd7e04",
     "value": 1400.0186,
-    "zScore": 4.188925083363401,
+    "zScore": 4.1848422320766785,
     "timeRemainingUTC": 27939499,
     "timeRemainingHuman": "323 days, 8:58:19",
     "endDate": 1798675200,
-    "confidenceValue": 0.5588943683363401
+    "confidenceValue": 0.5584860832076679
   },
   {
     "proxyWallet": "0x4b728832bfc0768f54e3d3b19414b17e1eaccd8e",
