@@ -2,8 +2,10 @@
 
 Insider trading predictor
 
-Does: Pull data from apis, clean and sort, do some basic statistics, automate updates to github
+Does: Pull data from apis, clean and sort, do some basic statistics. 
 
-Will: Fix automation on home pc, Task Scheduler has permissions issues. Eleminate need for fetch_by_slug, time intensive. More robust commenting and type hinting. Trades class especially, but everything is rife with repetative and wasteful code. 
+Needs: Fix automation on home pc. Work on statistical analysis
 
 Want: Better (and fast) statistical analysis
+
+Most recent updates: Eliminated need for fetch_by_slug redundent querying. Trades class has been slightly optimized. Error of closed events being proccessed has been handled. Automation still broken...
