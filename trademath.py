@@ -5,27 +5,34 @@ from datetime import datetime, timedelta
 
 class Trades:
 	def __init__(self,market_trades: List[Dict]):
+
+		self.kill_list = ["icon","bio","profileImage","profileImageOptimized"]
+
 		self.market_trades = market_trades
 		self.average_trades()
 		self.outliers()
-		self.price_analyisis()
+		self.price_analysis()
 		
-		#self.time_analyisis()
+		#self.time_analysis()
 
 
 
-	def average_trades(self):
+	def average_trades(self): #Also performs cleaning
 		values = {"BUY": [], "SELL": []}
 
 		for trade in self.market_trades:
-			local_tv = trade["value"] = trade["size"]*trade["price"]
-			values[trade["side"]].append(local_tv)
-		
-		self.buy_mean = statistics.mean(values["BUY"])
-		self.buy_sd = statistics.pstdev(values["BUY"])
+			self.local_tv = trade["value"] = trade["size"]*trade["price"]
+			values[trade["side"]].append(self.local_tv)
 
-		self.sell_mean = statistics.mean(values["SELL"])
-		self.sell_sd = statistics.pstdev(values["SELL"])
+			for key in self.kill_list:
+				trade.pop(key, None)
+
+		self.buy_mean = statistics.mean(values["BUY"]) if values["BUY"] else 0
+		self.buy_sd = statistics.pstdev(values["BUY"]) if values["BUY"] else 0
+
+		self.sell_mean = statistics.mean(values["SELL"]) if values["SELL"] else 0
+		self.sell_sd = statistics.pstdev(values["SELL"]) if values["SELL"] else 0
+		
 		
 
 	def outliers(self):
@@ -33,27 +40,31 @@ class Trades:
 
 		for trade in self.market_trades:
 			if trade["side"] == "BUY":
-				if (trade["value"]-self.buy_mean) > (2*self.buy_mean):
+
+				if (trade["value"]-self.buy_mean) > (2*self.buy_sd):
 					outliers.append(trade)
+
 			else:
-				if (trade["value"]-self.sell_mean) > (2*self.sell_mean):
+				if (trade["value"]-self.sell_mean) > (2*self.sell_sd):
 					outliers.append(trade)
 
-		self.market_trades = outliers #ok ok ok maybe not :P
+		self.market_trades = outliers #ok ok ok maybe not 
 
-	def price_analyisis(self):
+	def price_analysis(self):
 		for trade in self.market_trades:
 			if trade["side"] == "BUY":
-				trade["Z_SCORE"] = self.z_score_calculation(trade, "buy")
+				trade["zScore"] = self.z_score_calculation(trade, "buy")
 			if trade["side"] == "SELL":
-				trade["Z_SCORE"] = self.z_score_calculation(trade, "sell")
+				trade["zScore"] = self.z_score_calculation(trade, "sell")
+			#else: detonate CPU
 
 
 	def z_score_calculation(self,trade,side:str):
-		trade_value = trade["size"]*trade["price"]
 		mean = getattr(self, f"{side}_mean")
 		sd = getattr(self, f"{side}_sd")
-		return (trade_value-mean)/sd 
+		if sd <= 0:
+			return 0.0 						#Zeros must be handled
+		return (trade["value"]-mean)/sd
 
 	def time_analysis(self, Gamma_API: api.Gamma_API):
 		slug_cache = {}
@@ -76,7 +87,7 @@ class Trades:
 				trade["endDate"] = end_date
 
 			except Exception as ex:
-				#print(ex)
+
 				trade["timeRemainingUTC"] = 'Unknown'
 				trade["timeRemainingHuman"] = 'Unknown'
 				trade["endDate"] = 'Unknown'
@@ -86,17 +97,15 @@ class Trades:
 
 
 		for trade in self.market_trades:
-			timeWeight = 0
-			valueWeight = 0
+			time_weight = 0
+			value_weight = 0
 
 			if trade["endDate"] == 'Unknown':
-				timeWeight = 0.0
+				time_weight = 0.0
 			else:
-				timeWeight = 0.0
+				time_weight = 0.0
 
-			valueWeight = (trade["Z_SCORE"]/10) + (trade["value"]/10000)
+			value_weight = (trade["zScore"]/10) + (trade["value"]/10000)
 
-			trade["confidenceValue"] = (valueWeight*1.0) + (timeWeight*0.0)
-
-
+			trade["confidenceValue"] = 	(value_weight*1.0) + (time_weight*0.0)
 

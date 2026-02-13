@@ -15,9 +15,9 @@ TOPICS_WE_LIKE = ["greenland", "venezuela", "iran", "israel" ]      #check for s
 
 GammaTest = api.Gamma_API() 										# start gamma session, create gamma object for access to methods
 
-markets = GammaTest.get_markets(TAG_IDS["geopolitics"], limit=1000)  # pull markets from api using gamma object
+markets = GammaTest.get_markets(TAG_IDS["politics"], limit=300)  # pull markets from api using gamma object
 
-
+print("fetching markets")
 conditionIdList = api.market_filter(markets, TOPICS_WE_LIKE)		# filter for keywords and return list of conditionIds to be used with clob, prints each approved market
 
 																	#This would be a lot simpler if Data_API.get_trades() accurately took list of conditionIds
@@ -28,19 +28,21 @@ DataTest = api.Data_API()											# start data session
 
 all_trades = [] # -> List[List[Dict]]	
 
-for conditionId in conditionIdList:									# append to list List[Dict] for trades of ech conditionId
-	all_trades.append(DataTest.get_trades(market=conditionId, limit=2000))
+for conditionId in conditionIdList:	
+	print(f"fetching trades for {conditionId}")								# append to list List[Dict] for trades of ech conditionId
+	all_trades.append(DataTest.get_trades(market=conditionId, limit=10000))
 
 outliers = []
 
 for market_trades in all_trades: 									#append to list List[Dict] basic outlier check
+	print("Filtering outliers")
 	outliers.append(trademath.Trades(market_trades=market_trades))	#Do a bunch of shit on init of Trades
 
 final_list =[]
 
 for outlier in outliers: 
 	#print(outlier.market_trades)
-	print("Still running...")									# Do a bunch of shit 
+	print("Doing statistical analysis")									# Do a bunch of shit 
 	outlier.time_analysis(Gamma_API=GammaTest)
 	outlier.confidence_analysis()
 	for trade in outlier.market_trades: 
@@ -53,7 +55,7 @@ with open("output.json", "w") as f:
 	json.dump(final_list, f, indent=2)
 
 print("done")
-
+'''
 
 def git_push():
     try:
@@ -64,4 +66,4 @@ def git_push():
         print("Git operation failed:", e)
 
 git_push()
-
+'''
