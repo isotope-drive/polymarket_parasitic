@@ -16,20 +16,27 @@ TAG_IDS = {
 
 }
 
-TOPICS_WE_LIKE = ["greenland", "venezuela", "iran", "israel" ]      #check for spelling errors lol, always lowercase
+TOPICS_WE_LIKE = ["greenland", "venezuela", "iran", "israel", ]      #check for spelling errors lol, always lowercase
 
 GammaTest = api.Gamma_API() 										# start gamma session, create gamma object for access to methods
 
 print("Fetching markets..... (rate limited)")
 
-markets = GammaTest.get_markets_by_pagination(tag_id=TAG_IDS["geopolitics"], offset=10, limit=50)  # pull markets from api using gamma object
-
+markets = GammaTest.get_markets_by_pagination(tag_id=TAG_IDS["geopolitics"], offset=1, limit=50)  # pull markets from api using gamma object
 print(f"#MARKETS TOTAL: {len(markets)}")
-for i in range(len(markets)):
-	print(f"{markets[i]["slug"]} \t ConditionId:")
-conditionIdList = api.market_filter(markets, TOPICS_WE_LIKE)		# filter for keywords and return list of conditionIds to be used with clob, prints each approved market
+
+event_data_list = GammaTest.get_event_data(markets=markets)
+
+print(event_data_list)
+print(f"Active events: {len(event_data_list)}")
+
+conditionIdList = [event["conditionId"] for event in event_data_list]
+
+
+#conditionIdList = api.market_filter(markets, TOPICS_WE_LIKE)		# filter for keywords and return list of conditionIds to be used with clob, prints each approved market
 len_before_culling = len(conditionIdList)
-print(f"# MARKETS AFTER FILTER: {len_before_culling}")
+#print(f"# MARKETS AFTER FILTER: {len_before_culling}")
+#print(conditionIdList)
 
 																	#This would be a lot simpler if Data_API.get_trades() accurately took list of conditionIds
 
@@ -37,12 +44,7 @@ print(f"# MARKETS AFTER FILTER: {len_before_culling}")
 
 DataTest = api.Data_API()											# start data session
 
-conditionIdList = list(set(conditionIdList)) 						#Remove duplicates
-
-print(f"CULLED {len_before_culling-len(conditionIdList)} duplicates")
-
 all_trades = [] # -> List[List[Dict]]	
-
 
 print("Fetching trades...")
 for conditionId in conditionIdList:									# append to list List[Dict] for trades of ech conditionId
@@ -75,5 +77,3 @@ with open("output.json", "w") as f:
 	json.dump(final_list, f, indent=2)
 
 print("done")
-
-

@@ -55,6 +55,7 @@ class Gamma_API:
 					"tag_id" : tag_id,
 					"limit" : limit,
 					"closed": False,
+					"active": True,
 					"offset": i
 				}
 				)
@@ -62,6 +63,16 @@ class Gamma_API:
 			listed_pages.append(page.json())
 
 		return [conditionId for page in listed_pages for conditionId in page]
+
+	def get_event_data(self, markets: List[Dict]) -> List[Dict]:
+		ids_slugs_dicts = []
+		for market in markets:
+			for event in market["markets"]:
+				if event["closed"]==True:
+					break
+				ids_slugs_dicts.append({"conditionId" : event["conditionId"], "slug":event["conditionId"], "endDate":event["endDate"]})
+		return ids_slugs_dicts
+
 
 
 	def end_session(self):
@@ -100,6 +111,7 @@ def market_filter(markets: list[dict], topics: List[str]) -> List[str]: #maybe c
 		for topic in topics:
 			if topic in market["title"].lower(): # & os.time.laterthan(market["end_date?"]) != True 
 				for event in market["markets"]:
+					#print(event)
 					try:
 						#print(f"{event["question"]}\n\tconditionId: {event["conditionId"]}")
 						desired_markets.append(event["conditionId"])
