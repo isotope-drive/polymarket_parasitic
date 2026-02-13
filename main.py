@@ -3,6 +3,12 @@ import trademath
 import json
 from typing import List, Dict
 
+'''
+TO DO: Total market retrievel is okay! Make sure conditionIds
+ dont map to markets and not events, if they do we are not deleting 
+ duplicates we are deleting all but one event in each market
+'''
+
 
 TAG_IDS = {
 	"politics": "2",
@@ -14,11 +20,16 @@ TOPICS_WE_LIKE = ["greenland", "venezuela", "iran", "israel" ]      #check for s
 
 GammaTest = api.Gamma_API() 										# start gamma session, create gamma object for access to methods
 
-markets = GammaTest.get_markets_by_pagination(tag_id=TAG_IDS["geopolitics"], offset=25)  # pull markets from api using gamma object
+print("Fetching markets..... (rate limited)")
 
-print("fetching markets")
+markets = GammaTest.get_markets_by_pagination(tag_id=TAG_IDS["geopolitics"], offset=10, limit=50)  # pull markets from api using gamma object
+
+print(f"#MARKETS TOTAL: {len(markets)}")
+for i in range(len(markets)):
+	print(f"{markets[i]["slug"]} \t ConditionId:")
 conditionIdList = api.market_filter(markets, TOPICS_WE_LIKE)		# filter for keywords and return list of conditionIds to be used with clob, prints each approved market
-print(f"# MARKETS SEARCHED: {len(conditionIdList)}")
+len_before_culling = len(conditionIdList)
+print(f"# MARKETS AFTER FILTER: {len_before_culling}")
 
 																	#This would be a lot simpler if Data_API.get_trades() accurately took list of conditionIds
 
@@ -26,33 +37,35 @@ print(f"# MARKETS SEARCHED: {len(conditionIdList)}")
 
 DataTest = api.Data_API()											# start data session
 
+conditionIdList = list(set(conditionIdList)) 						#Remove duplicates
+
+print(f"CULLED {len_before_culling-len(conditionIdList)} duplicates")
+
 all_trades = [] # -> List[List[Dict]]	
 
-for conditionId in conditionIdList:	
-	print(f"fetching trades for {conditionId}")								# append to list List[Dict] for trades of ech conditionId
-	all_trades.append(DataTest.get_trades(market=conditionId, limit=10000))
 
+print("Fetching trades...")
+for conditionId in conditionIdList:									# append to list List[Dict] for trades of ech conditionId
+	all_trades.append(DataTest.get_trades(market=conditionId, limit=10000)) 
 
 
 outliers = []
 
+print("Filtering outliers")
 for market_trades in all_trades: 									#append to list List[Dict] basic outlier check
-	print("Filtering outliers")
 	outliers.append(trademath.Trades(market_trades=market_trades))	#Do a bunch of shit on init of Trades
-
 
 
 final_list =[]
 
+print("Doing statistical analysis")
 for outlier in outliers: 
-	#print(outlier.market_trades)
-	print("Doing statistical analysis")									# Do a bunch of shit 
+	#print(outlier.market_trades)								# Do a bunch of shit 
 	outlier.time_analysis(Gamma_API=GammaTest)
 	outlier.confidence_analysis()
 	for trade in outlier.market_trades: 
 		if trade["confidenceValue"] > 0.55:
 			final_list.append(trade)								# Ta-Da
-
 
 
 final_list.sort(key=lambda x: x["confidenceValue"], reverse=True) 

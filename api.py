@@ -47,7 +47,7 @@ class Gamma_API:
 
 	def get_markets_by_pagination(self,tag_id: str, limit: int = 50, offset: int = 0) -> List[Dict]:
 		listed_pages = []
-		time.sleep(0.1) 		#Does rate limiting help maximize num markets?
+		time.sleep(0.25) 		#Primitive rate limiting
 		for i in range(offset):
 			page = self.session.get(
 				f"{BASE_URL_GAMMA}events?",
