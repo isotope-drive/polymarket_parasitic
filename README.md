@@ -4,7 +4,7 @@ Insider trading predictor
 
 Does: Pull data from apis, clean and sort, do some basic statistics. 
 
-Needs: Fix automation on home pc. Work on statistical analysis
+Needs: Duplicates is still an issue... pain...Fix automation on home pc. Work on statistical analysis
 
 Want: Better (and fast) statistical analysis
 
