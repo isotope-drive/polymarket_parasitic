@@ -1,7 +1,6 @@
 import api
 import trademath
 import json
-import subprocess
 from typing import List, Dict
 
 
@@ -15,10 +14,11 @@ TOPICS_WE_LIKE = ["greenland", "venezuela", "iran", "israel" ]      #check for s
 
 GammaTest = api.Gamma_API() 										# start gamma session, create gamma object for access to methods
 
-markets = GammaTest.get_markets(TAG_IDS["politics"], limit=300)  # pull markets from api using gamma object
+markets = GammaTest.get_markets_by_pagination(tag_id=TAG_IDS["geopolitics"], offset=25)  # pull markets from api using gamma object
 
 print("fetching markets")
 conditionIdList = api.market_filter(markets, TOPICS_WE_LIKE)		# filter for keywords and return list of conditionIds to be used with clob, prints each approved market
+print(f"# MARKETS SEARCHED: {len(conditionIdList)}")
 
 																	#This would be a lot simpler if Data_API.get_trades() accurately took list of conditionIds
 
@@ -32,11 +32,15 @@ for conditionId in conditionIdList:
 	print(f"fetching trades for {conditionId}")								# append to list List[Dict] for trades of ech conditionId
 	all_trades.append(DataTest.get_trades(market=conditionId, limit=10000))
 
+
+
 outliers = []
 
 for market_trades in all_trades: 									#append to list List[Dict] basic outlier check
 	print("Filtering outliers")
 	outliers.append(trademath.Trades(market_trades=market_trades))	#Do a bunch of shit on init of Trades
+
+
 
 final_list =[]
 
@@ -49,21 +53,14 @@ for outlier in outliers:
 		if trade["confidenceValue"] > 0.55:
 			final_list.append(trade)								# Ta-Da
 
-final_list.sort(key=lambda x: x["confidenceValue"], reverse=True) #maybe reverse
+
+
+final_list.sort(key=lambda x: x["confidenceValue"], reverse=True) 
+
 
 with open("output.json", "w") as f:
 	json.dump(final_list, f, indent=2)
 
 print("done")
-'''
 
-def git_push():
-    try:
-        subprocess.run(["git", "add", "output.json"], check=True)
-        subprocess.run(["git", "commit", "-m", "Hourly update"], check=True)
-        subprocess.run(["git", "push"], check=True)
-    except subprocess.CalledProcessError as e:
-        print("Git operation failed:", e)
 
-git_push()
-'''

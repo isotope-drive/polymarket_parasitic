@@ -3,6 +3,7 @@ from py_clob_client.client import ClobClient
 from py_clob_client.client import OrderBookSummary 
 from py_clob_client.clob_types import BookParams
 from typing import Dict, List
+import time
 
 BASE_URL_GAMMA = "https://gamma-api.polymarket.com/"
 BASE_URL_CLOB = "https://clob.polymarket.com/"
@@ -23,14 +24,14 @@ class Gamma_API:
 	def __init__(self):
 		self.session = requests.Session()
 
-	def get_markets(self, tag_id: str, limit: int = 10) -> List[Dict]:
+	def get_markets(self, tag_id: str, limit: int = 50, offset: int = 0) -> List[Dict]:
 		resp = self.session.get(
 			f"{BASE_URL_GAMMA}events?",
 			params = {
 				"tag_id" : tag_id,
-				"active": True,
-				"closed": False,
 				"limit": limit,
+				#"active": True,
+				"closed": False,
 			}
 		)
 
@@ -43,6 +44,24 @@ class Gamma_API:
 			)
 		resp.raise_for_status()
 		return resp.json()
+
+	def get_markets_by_pagination(self,tag_id: str, limit: int = 50, offset: int = 0) -> List[Dict]:
+		listed_pages = []
+		time.sleep(0.1) 		#Does rate limiting help maximize num markets?
+		for i in range(offset):
+			page = self.session.get(
+				f"{BASE_URL_GAMMA}events?",
+				params = {
+					"tag_id" : tag_id,
+					"limit" : limit,
+					"closed": False,
+					"offset": i
+				}
+				)
+			page.raise_for_status()
+			listed_pages.append(page.json())
+
+		return [conditionId for page in listed_pages for conditionId in page]
 
 
 	def end_session(self):
