@@ -8,4 +8,4 @@ Needs: Duplicates is still an issue... pain...Fix automation on home pc. Proper 
 
 Want:
 
-Most recent updates: Eliminated need for fetch_by_slug redundent querying. Trades class has been slightly optimized. Error of closed events being proccessed has been handled. Automation still broken...
+Most recent updates: Eliminated need for fetch_by_slug redundent querying. Trades class has been slightly optimized. Data api taking disproportianate time
