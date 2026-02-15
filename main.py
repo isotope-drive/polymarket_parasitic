@@ -11,7 +11,7 @@ TAG_IDS = {
 
 }
 
-TOPICS_WE_LIKE = ["greenland", "venezuela", "iran", "israel", ]      #check for spelling errors lol, always lowercase
+TOPICS_WE_LIKE = ["greenland", "venezuela", "iran", "israel", ]      #check for spelling errors, always lowercase
 
 GammaTest = api.Gamma_API() 										 #start gamma session
 
