@@ -11,13 +11,8 @@ BASE_URL_DATA = "https://data-api.polymarket.com/"
 
 '''
 Class: Gamma_API
-Description: Upon initializing begins web session, main function is to return a list of markets to be sorted
-Functions: get_markets
-		Description: Retreives markets 
-		Params: tag_id, limit
-			end_session
-		Description: Terminates web session
-		Params: none 
+Description: Upon initializing begins web session, returns queries through methods
+Methods: get_markets, fetch_by_slug, get_markets_by_pagination
 '''
 class Gamma_API:
 	def __init__(self):
@@ -77,6 +72,12 @@ class Gamma_API:
 	def end_session(self):
 		self.session.close()
 
+'''
+Class: Clob_API
+Description: Upon initializing begins web session, returns queries through methods
+Methods: event_data, tokens, retrieve_bids
+Note: not really relevent unless headless orders are to be made
+'''
 
 class Clob_API: #Prices, orderbooks, trading
 	def __init__(self):
@@ -102,7 +103,7 @@ class Clob_API: #Prices, orderbooks, trading
 
 
 
-'''
+''' 
 def market_filter(markets: list[dict], topics: List[str]) -> List[str]: #maybe change return for ease later, this list will have to be used by later classes to cross ref ID,
 	desired_markets = []											
 
@@ -123,6 +124,11 @@ def market_filter(markets: list[dict], topics: List[str]) -> List[str]: #maybe c
 	return desired_markets
 '''
 
+'''
+Class: Data_API
+Description: Upon initializing begins web session, returns queries through methods
+Methods: get_trades, 
+'''
 
 class Data_API: #Positions, activity, history  
 	def __init__(self):
