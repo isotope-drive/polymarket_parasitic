@@ -3,7 +3,7 @@ import api
 import statistics
 from datetime import datetime, timedelta
 
-class Trades:
+class Trade:
 	def __init__(self,market_trades: List[Dict]):
 
 		self.kill_list = ["icon","bio","profileImage","profileImageOptimized"]

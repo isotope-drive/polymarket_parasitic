@@ -1,6 +1,7 @@
 import api
 import trademath
 import json
+import time
 from typing import List, Dict
 
 '''
@@ -22,12 +23,11 @@ GammaTest = api.Gamma_API() 										# start gamma session, create gamma object
 
 print("Fetching markets..... (rate limited)")
 
-markets = GammaTest.get_markets_by_pagination(tag_id=TAG_IDS["geopolitics"], offset=1, limit=50)  # pull markets from api using gamma object
+markets = GammaTest.get_markets_by_pagination(tag_id=TAG_IDS["geopolitics"], offset=3, limit=50)  # pull markets from api using gamma object
 print(f"#MARKETS TOTAL: {len(markets)}")
 
 event_data_list = GammaTest.get_event_data(markets=markets)
 
-print(event_data_list)
 print(f"Active events: {len(event_data_list)}")
 
 conditionIdList = [event["conditionId"] for event in event_data_list]
@@ -46,9 +46,10 @@ DataTest = api.Data_API()											# start data session
 
 all_trades = [] # -> List[List[Dict]]	
 
-print("Fetching trades...")
+print("Fetching trades... (rate limited)")
 for conditionId in conditionIdList:									# append to list List[Dict] for trades of ech conditionId
-	all_trades.append(DataTest.get_trades(market=conditionId, limit=10000)) 
+	time.sleep(0.1)
+	all_trades.append(DataTest.get_trades(market=conditionId, limit=1000)) 
 
 
 outliers = []
@@ -69,8 +70,11 @@ for outlier in outliers:
 		if trade["confidenceValue"] > 0.55:
 			final_list.append(trade)								# Ta-Da
 
+len_before_culling = len(final_list)
+final_list = [dict(t) for t in {tuple(sorted(d.items())) for d in final_list}]
+print(f"Total: {len_before_culling}, Cut: {len_before_culling-len(final_list)}, Remaining: {len(final_list)}")
 
-final_list.sort(key=lambda x: x["confidenceValue"], reverse=True) 
+final_list.sort(key=lambda x: x["timeRemainingUTC"],)#reverse=True) 
 
 
 with open("output.json", "w") as f:

@@ -1,6 +1,5 @@
 import requests
-from py_clob_client.client import ClobClient
-from py_clob_client.client import OrderBookSummary 
+from py_clob_client.client import ClobClient, OrderBookSummary
 from py_clob_client.clob_types import BookParams
 from typing import Dict, List
 import time
@@ -143,4 +142,4 @@ class Data_API: #Positions, activity, history
 		return resp.json()
 
 
-	#def event_slug_trade(self, event_slug: str, )
+	
