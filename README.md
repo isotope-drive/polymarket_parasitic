@@ -4,7 +4,7 @@ Insider trading predictor
 
 Does: Pull data from apis, clean and sort, do some basic statistics
 
-Working: Dataframes version, exploring better statistical analysis calculating weights and avoiding guassian randoms
+Working on: Dataframes version, exploring better statistical analysis calculating weights and avoiding guassian randoms
 
 Needs: Fix automation on home pc. Proper time analysis. Needs actual statistical analysis. 
 
