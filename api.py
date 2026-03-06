@@ -135,6 +135,7 @@ class Data_API: #Positions, activity, history
 		self.session = requests.Session()
 
 	def get_trades(self, market: List[str], takerOnly=True, limit = 1000) -> List[Dict]: # market has to be list of conditionIds but list doesn't seem to work
+		time.sleep(0.15)
 		resp = self.session.get(														# passing single conditionIds does though
 			f"{BASE_URL_DATA}trades?",
 			params = {
